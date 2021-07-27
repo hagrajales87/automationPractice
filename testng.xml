@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/hgrajales/Documents/automationpractice">
+        <!--Insert the Email Address-->
+        <parameter name="emailAddress" value="hagrajales87@gmail.com"/>
+
+        <!--Insert the Order Reference-->
+        <parameter name="orderReference" value="Test1"/>
+
+        <!--Insert the Subject Heading as follow:-->
+            <!--Value 0 equals to - Choose
+                Value 1 equals to Webmaster
+                Value 2 equals to Customer service
+            -->
+        <parameter name="subHeading" value="2"/>
+
+        <!--Insert the message-->
+        <parameter name="message" value="Happy path Test" />
+
+        <classes>
+            <class name="contactForm.InsertDataTest">
+            </class>
+        </classes>
+    </test>
+</suite>
